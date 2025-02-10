@@ -1,0 +1,24 @@
+input already taken in programme no need to take dataset
+========================================================
+        network.put("A", new HashSet<>(Arrays.asList("B", "C")));
+        network.put("B", new HashSet<>(Arrays.asList("A", "D", "E")));
+        network.put("C", new HashSet<>(Arrays.asList("A", "D")));
+        network.put("D", new HashSet<>(Arrays.asList("B", "C", "F")));
+        network.put("E", new HashSet<>(Arrays.asList("B", "F")));
+        network.put("F", new HashSet<>(Arrays.asList("D", "E")));
+        
+
+use the following command to get the output
+===========================================
+
+C:\hadoop\sbin>hadoop jar C:\Users\User\Documents\JARFILES\f100.jar com.friends/FriendsOfFriends /todayfriends100
+
+
+output
+======
+A's Friends of Friends: [D, E]
+B's Friends of Friends: [C, F]
+C's Friends of Friends: [B, F]
+D's Friends of Friends: [A, E]
+E's Friends of Friends: [A, D]
+F's Friends of Friends: [B, C]
